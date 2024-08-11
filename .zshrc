@@ -108,3 +108,9 @@ func src-it() {
 source ~/.zshrc
 }
 
+func zp() {
+vim ~/.zshrc
+
+### STARTUP ###
+eval "$(devbox global shellenv)"
+}
