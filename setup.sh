@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+pushd $HOME
 
 # assume zsh not installed
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -32,4 +33,5 @@ for tool in $tools; do
 done
 
 # enter devbox shell
+refresh-global
 eval "$(devbox global shellenv)"

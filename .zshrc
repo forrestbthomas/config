@@ -3,7 +3,6 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="aussiegeek"
-zstyle ':omz:update' mode auto      # update automatically without asking
 source $ZSH/oh-my-zsh.sh
 
 ### ENV VARS ###
@@ -13,6 +12,7 @@ source $ZSH/oh-my-zsh.sh
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
+alias gp="git push"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 
