@@ -33,5 +33,4 @@ for tool in $tools; do
 done
 
 # enter devbox shell
-refresh-global
 eval "$(devbox global shellenv)"
