@@ -12,3 +12,24 @@ curl -fsSL https://get.jetify.com/devbox | bash # not sure why it needs to be ba
 
 # install Fleek "high" profile
 devbox global pull https://devbox.getfleek.dev/high
+devbox init
+
+# add global tools
+tools=(
+    "jq"
+    "yq"
+    "ripgrep"
+    "fzf"
+    "git"
+    "vim"
+    "vscode"
+    "python3"
+    "nodejs"
+    "go"
+)
+for tool in $tools; do
+    devbox global add $tool
+done
+
+# enter devbox shell
+eval "$(devbox global shellenv)"
